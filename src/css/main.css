@@ -1,0 +1,31 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+
+/* Utils */
+@import url('./utils/variables.css');
+@import url('./utils/visually-hidden.css');
+/* base */
+@import url('./base/common.css');
+@import url('./base/reset.css');
+/* components */
+@import url('./components/container.css');
+/* layouts */
+@import url('./layout/header.css');
+@import url('./layout/hero.css');
+@import url('./layout/advantages.css');
+@import url('./layout/unique_components.css');
+@import url('./layout/how_its_made.css');
+@import url('./layout/our_products.css');
+@import url('./layout/top_sellers.css');
+@import url('./layout/reviews.css');
+@import url('./layout/subscribe.css');
+@import url('./layout/footer.css');
+@import url('./layout/buy_now_modal.css');
+@import url('./layout/thankyou_modal.css');
+@import url('./layout/leave_a_review_about_our_chocolate_modal.css');
+@import url('./layout/thank_you_for_your_feedback_modal.css');
+@import url('./layout/explore_our_new_chocolate_first_modal.css');
