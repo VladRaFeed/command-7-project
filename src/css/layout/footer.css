@@ -1,3 +1,42 @@
-.footer {
-  color: lightcoral;
+.section-footer {
+  background-color: var(--secondary-bcg-color);
+}
+
+.footer-paragraph {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+
+  color: var(--main-white-color);
+}
+
+.footer-paragraph-orange {
+  color: var(--brand-color);
+}
+
+.footer-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+
+  color: var(--main-white-color);
+}
+
+.address-link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+
+  color: var(--main-white-color);
+}
+
+.nav-link-footer {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+
+  color: var(--main-white-color);
 }
