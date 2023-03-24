@@ -1,10 +1,60 @@
 .subscribe-section {
   background-image: url(../../images/subscribe/subcribe-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .subscribe-section {
+    background-image: url(../../images/subscribe/subcribe-mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 1),
+  screen and (min-width: 768px) and (min-resolution: 96dpi),
+  screen and (min-width: 768px) and (min-resolution: 1dppx) {
+  .subscribe-section {
+    background-image: url(../../images/subscribe/subcribe-tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .subscribe-section {
+    background-image: url(../../images/subscribe/subcribe-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 1),
+  screen and (min-width: 1200px) and (min-resolution: 96dpi),
+  screen and (min-width: 1200px) and (min-resolution: 1dppx) {
+  .subscribe-section {
+    background-image: url(../../images/subscribe/subcribe.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .subscribe-section {
+    background-image: url(../../images/subscribe/subcribe@2x.jpg);
+  }
 }
 
 .subscribe-section-container {
   padding-top: 62px;
   padding-bottom: 63px;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-section-container {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
 }
 
 .subscribe-section-title {
@@ -17,6 +67,13 @@
   margin-bottom: 24px;
 }
 
+@media screen and (min-width: 768px) {
+  .subscribe-section-title {
+    font-size: 24px;
+    line-height: 1.1666;
+  }
+}
+
 .subscribe-section-text {
   font-size: 14px;
   line-height: 1.285;
@@ -24,6 +81,14 @@
   text-align: center;
 
   margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-section-text {
+    width: 467px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .subscribe-section-button {
@@ -34,8 +99,23 @@
   border-radius: 100px;
   background-color: var(--brand-color);
   border: none;
+  cursor: pointer;
 
   padding: 12px 28px;
   margin: 0 auto;
   display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-section-button {
+    font-size: 18px;
+    line-height: 1.222;
+    padding: 14px 40px;
+  }
+}
+
+.subscribe-section-button:hover,
+.subscribe-section-button:focus {
+  color: var(--brand-color);
+  background-color: var(--acent-color);
 }
