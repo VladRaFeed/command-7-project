@@ -22,6 +22,6 @@
   width: 308px;
 }
 
-.advantages-list .item:not(:last-child) {
-  margin-bottom: 20px;
+.advantages-list .item:not(:first-child) {
+  margin-top: 20px;
 }
