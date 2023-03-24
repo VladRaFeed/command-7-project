@@ -25,10 +25,12 @@ letter-spacing: -0.03em;
 }
 
 .about-project-list{
-
 }
 
 .about-project-list-item{
+}
+
+.about-project-list-text{
   font-size: 14px;
  line-height: 1.29;
 }
