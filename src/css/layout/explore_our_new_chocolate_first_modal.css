@@ -1,3 +1,41 @@
-.explore {
-  color: gold;
+.subscribe-section {
+  background-image: url(../../images/subscribe/subcribe-mobile.jpg);
+}
+
+.subscribe-section-container {
+  padding-top: 62px;
+  padding-bottom: 63px;
+}
+
+.subscribe-section-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: var(--main-white-color);
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.subscribe-section-text {
+  font-size: 14px;
+  line-height: 1.285;
+  color: var(--main-white-color);
+  text-align: center;
+
+  margin-bottom: 24px;
+}
+
+.subscribe-section-button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.214;
+  color: var(--main-white-color);
+  border-radius: 100px;
+  background-color: var(--brand-color);
+  border: none;
+
+  padding: 12px 28px;
+  margin: 0 auto;
+  display: block;
 }
