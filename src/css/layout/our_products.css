@@ -32,6 +32,7 @@
 .price-box {
   background-color: var(--main-bsg-color);
   border: 1px solid var(--border-color);
+  border-radius: 100px;
 }
 
 .card-price {
