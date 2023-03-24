@@ -1,3 +1,34 @@
 .howitsmade {
   color: darkorange;
 }
+
+.about-project-title{
+font-weight: 600;
+font-size: 24px;
+line-height: 1.166;
+letter-spacing: -0.03em;
+}
+
+.about-project-title-item{
+  color: var(--brand-color);
+}
+
+.about-project-img{
+  width: 335px;
+  height: 500px;
+}
+
+.about-project-subtitle{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.333;
+}
+
+.about-project-list{
+
+}
+
+.about-project-list-item{
+  font-size: 14px;
+ line-height: 1.29;
+}
