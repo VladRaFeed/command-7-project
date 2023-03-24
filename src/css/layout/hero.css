@@ -1,3 +1,33 @@
 .hero {
-  color: blue;
+  background-color: brown;
+}
+.hero-subtitle {
+  color: var(--main-white-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+.buy-btn {
+  color: var(--main-white-color);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+}
+.how-made-btn {
+  color: var(--main-white-color);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+.scroll-btn {
+  color: var(--main-white-color);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+}
+
+.svg-scroll-btn {
+  fill: var(--brand-color);
 }
