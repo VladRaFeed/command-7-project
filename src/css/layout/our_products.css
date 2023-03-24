@@ -1,3 +1,41 @@
-.ourproducts {
-  color: darkgreen;
+.products-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+}
+
+.orange {
+  color: var(--brand-color);
+}
+
+.card-item {
+  border: 1px solid var(--border-color);
+  border-radius: 15px;
+  background-color: var(--main-white-color);
+}
+.card-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+}
+.card-subtitle {
+  font-size: 12px;
+  line-height: 1.17;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.price-box {
+  background-color: var(--main-bsg-color);
+  border: 1px solid var(--border-color);
+}
+
+.card-price {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
 }

@@ -1,8 +1,9 @@
 :root {
   --main-bsg-color: #fafafa;
-  --main-white-color: #fff;
+  --main-white-color: #ffffff;
   --main-text-color: #111111;
   --secondary-bcg-color: #1e1823;
   --brand-color: #fd9222;
   --acent-color: #fcf1e0;
+  --border-color: rgba(17, 17, 17, 0.1);
 }
