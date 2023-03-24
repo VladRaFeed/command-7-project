@@ -1,19 +1,23 @@
 <section class="hero">
-  <div class="container">
+  <div class="container hero-container">
     <h2 class="visually-hidden">hero</h2>
     <h3 class="hero-subtitle">
       Treat yourself or a loved one to our finest ingredients for a moment of
       pure delight!
     </h3>
-    <div>
-      <button class="buy-btn">Buy now</button>
-      <button class="how-made-btn">How it’s made</button>
+    <div class="hero-btn-container">
+      <div class="hero-btn">
+        <button class="main-button buy-btn">Buy now</button>
+        <button class="main-button how-made-btn">How it’s made</button>
+      </div>
+      <button class="scroll-btn">
+        scroll down
+        <div class="arrow-container">
+          <svg class="svg-scroll-btn">
+            <use href="../images/icons.svg#icon-arrow-down"></use>
+          </svg>
+        </div>
+      </button>
     </div>
-    <button class="scroll-btn">
-      scroll down
-      <svg width="28" height="28" class="svg-scroll-btn">
-        <use href="../images/icons.svg#icon-arrow-down"></use>
-      </svg>
-    </button>
   </div>
 </section>
