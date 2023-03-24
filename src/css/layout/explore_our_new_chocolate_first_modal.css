@@ -71,7 +71,6 @@
   letter-spacing: -0.03em;
   color: var(--main-white-color);
   text-align: center;
-  margin-bottom: 24px;
 }
 
 @media screen and (min-width: 768px) {
@@ -87,7 +86,7 @@
   color: var(--main-white-color);
   text-align: center;
 
-  margin-bottom: 24px;
+  margin-top: 24px;
 }
 
 @media screen and (min-width: 768px) {
@@ -109,7 +108,7 @@
   cursor: pointer;
 
   padding: 12px 28px;
-  margin: 0 auto;
+  margin: 24px auto 0;
   display: block;
 }
 
