@@ -3,4 +3,5 @@ body {
   font-size: 16px;
   margin: 0;
   background-color: var(--main-bcg-color);
+  letter-spacing: -0.02em;
 }
