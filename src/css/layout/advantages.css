@@ -1,3 +1,27 @@
 .advantages {
-  color: aquamarine;
+  background-color: var(--secondary-bcg-color);
+  padding-bottom: 36px;
+  padding-top: 20px;
+}
+
+.advantages-titles {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--main-white-color);
+}
+
+.advantages-text {
+  font-size: 14px;
+  line-height: 1.21;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 18px;
+}
+
+.advantages-list-item {
+  width: 308px;
+}
+
+.advantages-list .item:not(:first-child) {
+  margin-top: 20px;
 }
