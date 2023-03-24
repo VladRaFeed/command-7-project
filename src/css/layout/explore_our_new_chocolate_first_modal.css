@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin: 0 auto;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -42,6 +43,12 @@
   screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .subscribe-section {
     background-image: url(../../images/subscribe/subcribe@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-section {
+    width: 1200px;
   }
 }
 
