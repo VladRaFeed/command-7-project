@@ -13,6 +13,7 @@
 @import url('./base/reset.css');
 /* components */
 @import url('./components/container.css');
+@import url('./components/buttons.css');
 /* layouts */
 @import url('./layout/header.css');
 @import url('./layout/hero.css');
