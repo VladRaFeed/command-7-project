@@ -1,3 +1,44 @@
-.unique {
-  color: red;
+/* Unique components */
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.166;
+  color: var(--main-text-color);
+  text-align: center;
+}
+
+.title.orange {
+  color: var(--brand-color);
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.28;
+  color: var(--main-text-color);
+  text-align: center;
+}
+
+.components-name {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28;
+  color: var(--main-text-color);
+}
+
+.components-name.light {
+  color: var(--main-white-color);
+}
+
+.components-item.milk-chocolate {
+  background-color: var(--brand-color);
+}
+
+.components-item.milk,
+.components-item.corns {
+  background-color: var(--main-white-color);
+  border: 1px solid var(--brand-color);
+}
+
+.components-item.nuts {
+  background-color: var(--secondary-bcg-color);
 }
