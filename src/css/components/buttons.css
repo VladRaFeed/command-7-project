@@ -1,0 +1,28 @@
+.main-button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.214;
+  color: var(--main-white-color);
+  border-radius: 100px;
+  background-color: var(--brand-color);
+  border: none;
+  cursor: pointer;
+
+  padding: 12px 28px;
+  margin: 0 auto;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .main-button {
+    font-size: 18px;
+    line-height: 1.222;
+    padding: 14px 40px;
+  }
+}
+
+.main-button:hover,
+.main-button:focus {
+  color: var(--brand-color);
+  background-color: var(--acent-color);
+}
