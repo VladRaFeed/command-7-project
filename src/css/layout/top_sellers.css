@@ -59,11 +59,11 @@
   }
   .ts-btn {
     position: absolute;
-    right: 44px;
+    right: 32px;
     bottom: 40px;
   }
 }
-@media screen and(min-width:1200px) {
+@media screen and (min-width: 1200px) {
   .ts-img {
     width: 368px;
   }
