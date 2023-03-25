@@ -1,3 +1,7 @@
-.buynow {
-  color: teal;
+.container-buynow {
+  background-color: var(--main-bcg-color);
+  border-radius: 15px;
+}
+.comment {
+  resize: none;
 }

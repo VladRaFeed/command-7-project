@@ -8,7 +8,8 @@
 .title-orange {
   color: var(--brand-color);
 }
-.ts-text {
+.ts-text,
+.ts-text-desktop {
   width: 306px;
   font-weight: 400;
   font-size: 14px;
@@ -27,6 +28,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  .ts-text-desktop {
+    display: none;
+  }
   .ts-img {
     width: 335px;
   }
@@ -43,6 +47,9 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .ts-text {
+    display: none;
+  }
   .ts-img {
     width: 344px;
   }
@@ -51,20 +58,22 @@
     gap: 16px;
     margin-top: 50px;
   }
-  .ts-text {
+  .main-button {
+    height: 50px;
+    margin: 0;
+  }
+  .p-wrapper {
+    display: flex;
+    justify-content: space-between;
     margin-top: 32px;
-  }
-  .ts-section .container {
-    position: relative;
-  }
-  .ts-btn {
-    position: absolute;
-    right: 32px;
-    bottom: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
   .ts-img {
     width: 368px;
+  }
+
+  .ts-text-desktop {
+    width: 407px;
   }
 }
