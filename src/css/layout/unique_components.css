@@ -1,8 +1,13 @@
 /* Unique components */
+
+.uniqe-components {
+  background-color: var(--modal-bcg-color);
+}
 .title {
   font-weight: 600;
   font-size: 24px;
   line-height: 1.166;
+  letter-spacing: -0.03em;
   color: var(--main-text-color);
   text-align: center;
 }
@@ -14,6 +19,7 @@
 .text {
   font-size: 14px;
   line-height: 1.28;
+  letter-spacing: -0.03em;
   color: var(--main-text-color);
   text-align: center;
 }
