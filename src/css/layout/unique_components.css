@@ -99,7 +99,6 @@
 @media (min-width: 768px) {
   .components-list.list {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     margin-top: 50px;
   }
@@ -107,7 +106,6 @@
 
 @media (min-width: 1200px) {
   .components-list.list {
-    flex-wrap: nowrap;
     gap: 19px;
   }
 }
@@ -161,15 +159,62 @@
 }
 
 @media (min-width: 768px) {
-  .components-item:nth-child(2n) {
-    margin-left: 32px;
+  .components-item {
+    width: 335px;
   }
 
   .components-item:not(:first-child) {
     margin-top: 0;
   }
-  .components-item:nth-child(n + 3) {
+  .components-item.milk {
     margin-top: 32px;
+  }
+
+  .components-item.nuts {
+    margin-top: 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .components-item.milk {
+    margin-top: 0;
+  }
+
+  .components-item.nuts {
+    margin-top: 0;
+  }
+}
+
+.wrapper-second {
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .wrapper-first {
+    display: flex;
+    flex-direction: column;
+    margin-right: 32px;
+  }
+
+  .wrapper-second {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper-first {
+    flex-direction: row;
+    margin-right: 0;
+    gap: 19px;
+  }
+
+  .wrapper-second {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    gap: 19px;
   }
 }
 
