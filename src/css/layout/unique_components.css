@@ -16,7 +16,7 @@
   }
 }
 
-.uniqe-components {
+.unique-components {
   background-color: var(--main-bsg-color);
 }
 .title {
@@ -124,6 +124,8 @@
 
 .components-name.card {
   position: static;
+  font-size: 18px;
+  line-height: 1.22;
 }
 
 .components-name.light {
