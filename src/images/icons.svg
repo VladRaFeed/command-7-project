@@ -5,10 +5,8 @@
             <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.875"
                 d="M3 12h18M3 6h18M3 18h18"></path>
         </symbol>
-        <symbol id="icon-logo" viewBox="0 0 21 24">
-            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2"
-                d="M15.226 17.91l-10.64-6.648M7.521 6.449l10.639 6.648M6.972 19.398l8.802-14.437M19.382 11.091c-2.28-1.424-3.175-2.537-1.708-4.943l-7.22-4.512-8.801 14.438 10.64 6.648 7.090-11.63z">
-            </path>
+        <symbol id="icon-logo" viewBox="0 0 27 32">
+        <path fill="none" stroke="#fd9222" style="stroke: var(--color1, #fd9222)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.7429" d="M20.111 23.118l-14.185-8.864M9.837 7.837l14.186 8.864M9.106 25.102l11.736-19.25M25.652 14.027c-3.040-1.899-4.234-3.384-2.278-6.592l-9.626-6.015-11.736 19.25 14.186 8.864 9.454-15.507z"></path>
         </symbol>
         <symbol id="icon-instagram" viewBox="0 0 24 24">
             <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2"
