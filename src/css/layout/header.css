@@ -1,3 +1,38 @@
+@media (min-width: 1200px) {
+  .nav-container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 25px;
+  padding-bottom: 19px;
+}
+
+@media (min-width: 768px) {
+  .menu-container {
+    padding-top: 31px;
+    padding-bottom: 31px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu-container {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 190px;
+  }
+}
+
+.logo-container {
+  display: flex;
+}
+
 .header-logo {
   font-style: italic;
   font-weight: 700;
@@ -10,6 +45,44 @@
 
 .logo-second {
   font-style: normal;
+  margin-right: 6px;
+}
+
+.nav-social-container {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .site-nav {
+    display: flex;
+    gap: 24px;
+    margin-right: 136px;
+  }
+}
+
+.button-burger {
+  background-color: transparent;
+  border: none;
+
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+}
+
+@media (min-width: 1200px) {
+  .button-burger {
+    display: none;
+  }
+}
+
+.icon-burger {
+  stroke: var(--main-text-color);
 }
 
 .nav-link {
@@ -19,4 +92,32 @@
   letter-spacing: -0.02em;
 
   color: var(--main-text-color);
+
+  padding-top: 26px;
+  padding-bottom: 31px;
+
+  display: block;
+}
+
+.header-social {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .header-social {
+    display: flex;
+    gap: 21px;
+  }
+}
+
+.header-social-link {
+  stroke: var(--main-text-color);
+  transition: stroke 250ms cubic-bezier(0.95, 0.03, 0.67, 1.07);
+
+  display: flex;
+}
+
+.header-social-link:hover,
+.header-social-link:focus {
+  stroke: var(--brand-color);
 }
