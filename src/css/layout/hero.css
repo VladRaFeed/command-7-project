@@ -10,8 +10,6 @@
   background-position: 75% 75%;
   background-size: cover;
   max-width: 1136px;
-  margin-right: auto;
-  margin-left: auto;
   padding-top: 395px;
   padding-bottom: 21px;
   border-radius: 30px;
@@ -36,11 +34,13 @@
 
 .hero-btn {
   display: flex;
-  gap: 15px;
+  gap: 14px;
   margin-top: 32px;
 }
 
 .main-button {
+  height: 41px;
+  line-height: 1.2;
   margin-right: 0;
   margin-left: 0;
 }
@@ -54,7 +54,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-top: 44px;
+  margin-top: 32px;
   background-color: transparent;
   border: none;
   color: var(--main-white-color);
@@ -72,8 +72,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   background-color: var(--main-white-color);
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.95, 0.03, 0.67, 1.07);
@@ -110,10 +110,6 @@
     max-width: 485px;
   }
 
-  .hero-btn {
-    margin: 0;
-  }
-
   .hero-btn-container {
     display: flex;
     justify-content: space-between;
@@ -121,9 +117,21 @@
     margin-top: 32px;
   }
 
+  .hero-btn {
+    margin: 0;
+  }
+
+  .main-button {
+    height: 45px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
   .scroll-btn {
     margin: 0;
     gap: 14px;
+    font-size: 14px;
+    line-height: 1.28;
   }
 
   .arrow-container {
