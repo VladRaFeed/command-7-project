@@ -31,6 +31,7 @@
     width: 335px;
   }
   .ts-list {
+    flex-direction: column;
     margin-top: 32px;
     gap: 32px;
   }
@@ -65,7 +66,5 @@
 @media screen and(min-width:1200px) {
   .ts-img {
     width: 368px;
-  }
-  .ts-list {
   }
 }
