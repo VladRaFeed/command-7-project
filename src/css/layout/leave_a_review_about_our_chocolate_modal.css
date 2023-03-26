@@ -1,31 +1,31 @@
+/* Modal leave a review */
 .title.review {
+  margin: 0;
   text-align: left;
 }
 
 .review-close {
-  width: 14px;
-  height: 14px;
+  width: 24px;
+  height: 24px;
 }
 
 .button {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 15px;
+  right: 10px;
   border: none;
   background-color: transparent;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
   stroke: currentColor;
 }
 
 @media (min-width: 768px) {
   .button {
-    top: 31px;
-    right: 31px;
+    top: 21px;
+    right: 21px;
   }
 }
 
@@ -44,7 +44,7 @@
 .modal-review {
   min-width: 312px;
   height: 470px;
-
+  max-height: 90vh;
   padding-top: 32px;
   padding-right: 24px;
   padding-bottom: 32px;
@@ -142,6 +142,7 @@
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: -0.02em;
+  font-weight: 500;
 }
 
 @media (min-width: 768px) {
@@ -170,10 +171,18 @@
 
 .review-label::after {
   content: '';
-  display: block;
-  width: 1px;
-  height: 10px;
-  color: var(--border-color);
+  position: absolute;
+  margin-left: 14px;
+  display: inline-block;
+  width: 2px;
+  height: 20px;
+  background-color: var(--border-color);
+}
+
+@media (min-width: 768px) {
+  .review-label::after {
+    margin-left: 32px;
+  }
 }
 
 .form-flag {
