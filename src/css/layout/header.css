@@ -112,9 +112,10 @@
 
 .header-social-link {
   stroke: var(--main-text-color);
-  transition: stroke 250ms cubic-bezier(0.95, 0.03, 0.67, 1.07);
 
   display: flex;
+
+  transition: stroke 250ms cubic-bezier(0.95, 0.03, 0.67, 1.07);
 }
 
 .header-social-link:hover,
