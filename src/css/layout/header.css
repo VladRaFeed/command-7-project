@@ -36,16 +36,23 @@
 .header-logo {
   font-style: italic;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 1.11;
+  font-size: 14px;
+  line-height: 1.29;
   letter-spacing: -0.03em;
 
   color: var(--main-text-color);
 }
 
+@media (min-width: 768px) {
+  .header-logo {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+}
+
 .logo-second {
   font-style: normal;
-  margin-right: 6px;
+  margin-right: 4px;
 }
 
 .nav-social-container {
@@ -93,8 +100,8 @@
 
   color: var(--main-text-color);
 
-  padding-top: 26px;
-  padding-bottom: 31px;
+  padding-top: 28px;
+  padding-bottom: 36px;
 
   display: block;
 }

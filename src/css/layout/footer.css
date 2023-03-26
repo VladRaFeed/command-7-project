@@ -173,6 +173,18 @@
   transition: stroke 250ms cubic-bezier(0.95, 0.03, 0.67, 1.07);
 }
 
+.footer-social-item {
+  width: 22px;
+  height: 22px;
+}
+
+@media (min-width: 768px) {
+  .footer-social-item {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 .footer-social-link:hover,
 .footer-social-link:focus {
   stroke: var(--brand-color);
