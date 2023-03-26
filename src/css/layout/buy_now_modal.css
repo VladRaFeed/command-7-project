@@ -1,6 +1,5 @@
 .container-buynow {
   width: 311px;
-  height: 1007px;
   margin-left: auto;
   margin-right: auto;
   padding: 32px 24px;
@@ -16,15 +15,25 @@
 
 .product-card {
   width: 231px;
-  height: 257px;
   margin-top: 32px;
   margin-left: auto;
   margin-right: auto;
-
+  padding-bottom: 28px;
+  overflow: hidden;
   background-color: var(--main-white-color);
   border: 1px solid var(--border-color);
   border-radius: 15px;
 }
+
+.product-list {
+  list-style: none;
+  display: flex;
+}
+
+.prouct-container {
+  width: 231px;
+}
+
 .product-img {
   width: 167px;
   height: 148px;
@@ -67,11 +76,54 @@
   font-weight: 400;
   font-size: 14px;
 }
+
 .surname {
   margin-top: 14px;
+}
+
+.phone-label {
+  position: relative;
+}
+.cust-phone {
+  padding-left: 100px;
+}
+
+.phone-icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  top: 36px;
+  left: 18px;
+}
+
+.phone-icon::after {
+  content: '';
+  height: 18px;
+  width: 2px;
+
+  background-color: var(--border-color);
+}
+
+.number {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
 }
 
 .comment {
   resize: none;
   height: 91px;
+}
+
+.card-label {
+  position: relative;
+}
+
+.card-icon {
+  position: absolute;
+  display: block;
+  right: 15px;
+  bottom: 13px;
 }
