@@ -1,58 +1,67 @@
 <div class="container-buynow">
-  <h2 class="title-second"><span class="title-orange">buy</span> now</h2>
+  <h2 class="second-title"><span class="orange-title">buy</span> now</h2>
   <div class="product-card">
     <img src="../images/buy_now/buy100.jpg" alt="100g" class="product-img" />
-    <button type="button" class="prod-weight">100g</button>
+    <span class="prod-weight">100g</span>
   </div>
   <form action="" class="buynow-form">
-    <p>Personal information</p>
-    <input
-      type="text"
-      name="cust_name"
-      placeholder="Name"
-      required
-      class="buynow-input"
-    />
-    <input
-      type="text"
-      name="cust_surname"
-      placeholder="Surname"
-      required
-      class="buynow-input"
-    />
-    <label class="cust-email">
-      Email
-      <input
-        type="email"
-        name="cust_email"
-        placeholder="Enter your email"
-        required
-        class="buynow-input"
-      />
-    </label>
-    <label class="phone">
-      Phone number
-      <input
-        type="tel"
-        name="cust_phone"
-        placeholder="Phone number"
-        required
-        class="buynow-input cust-phone"
-      />
-    </label>
-    <label class="card-number">
-      Card number
-      <input
-        type="text"
-        name="cust_ccard"
-        placeholder="Enter card"
-        class="buynow-input"
-      />
-    </label>
-    <label class="comment">
-      Comment
-      <textarea name="comment" placeholder="Enter text"></textarea>
-    </label>
-    <button type="submit" class="main-button">Submit</button>
+    <div class="form-container">
+      <div class="pers-inf">
+        <p class="form-label">Personal information</p>
+        <input
+          type="text"
+          name="cust_name"
+          placeholder="Name"
+          required
+          class="buynow-input"
+        />
+        <input
+          type="text"
+          name="cust_surname"
+          placeholder="Surname"
+          required
+          class="buynow-input surname"
+        />
+      </div>
+
+      <label class="form-label">
+        Email
+        <input
+          type="email"
+          name="cust_email"
+          placeholder="Enter your email"
+          required
+          class="buynow-input"
+        />
+      </label>
+      <label class="form-label">
+        Phone number
+        <input
+          type="tel"
+          name="cust_phone"
+          placeholder="Phone number"
+          required
+          class="buynow-input cust-phone"
+        />
+      </label>
+      <label class="form-label">
+        Card number
+        <input
+          type="text"
+          name="cust_ccard"
+          placeholder="Enter card"
+          class="buynow-input"
+        />
+      </label>
+      <label class="form-label">
+        Comment
+        <textarea
+          name="comment"
+          placeholder="Enter text"
+          class="buynow-input comment"
+        ></textarea>
+      </label>
+      <button type="submit" class="main-button buynow-btn">Submit</button>
+    </div>
   </form>
 </div>
