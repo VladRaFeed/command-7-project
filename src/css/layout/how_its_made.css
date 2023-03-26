@@ -136,6 +136,17 @@ border-radius: 15px;
   gap: 18px;
 }
 
+@media screen and (min-width: 768px) {
+  .about-project-list {
+    margin-top: 28px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-project-list {
+    gap: 24px;
+  }
+}
 .about-project-list-item {
 }
 
