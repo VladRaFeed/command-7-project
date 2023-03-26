@@ -23,44 +23,91 @@
     <!-- styles -->
     
     <script type="module" crossorigin src="/command-7-project/assets/index-ec808ebb.js"></script>
-    <link rel="stylesheet" href="/command-7-project/assets/index-e75ef2ca.css">
+    <link rel="stylesheet" href="/command-7-project/assets/index-60d8a911.css">
   </head>
   <body>
     <header>
 
-  <div>
+  <div class="container">
 
-    <nav>
 
-      <a class="header-logo logo-first link" href="#">SIMPLY
-        <span class="header-logo logo-second">CHOCOLATE</span>
-      </a>
+    <nav class="nav-container">
 
-      <ul class="list">
+      <div class="menu-container">
 
-        <li>
-          <a class="nav-link link" href="">Home</a>
-        </li>
+        <div class="logo-container">
+          <a class="header-logo logo-first link" href="#">SIMPLY
+            <span class="header-logo logo-second">CHOCOLATE</span>
 
-        <li>
-          <a class="nav-link link" href="">How it’s made?</a>
-        </li>
+          </a>
 
-        <li>
-          <a class="nav-link link" href="">Our products</a>
-        </li>
+          <svg width="21" height="21">
+            <use href="../images/icons.svg#icon-logo"></use>
+          </svg>
 
-        <li>
-          <a class="nav-link link" href="">Top sellers</a>
-        </li>
+        </div>
 
-        <li>
-          <a class="nav-link link" href="">Chocolate is loved</a>
-        </li>
+        <button class="button-burger" type="button">
+          <svg width="28" height="28">
+            <use class="icon-burger" href="../images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
 
-      </ul>
+      </div>
+
+      <div class="nav-social-container">
+
+        <ul class="site-nav list">
+
+          <li>
+            <a class="nav-link link" href="">Home</a>
+          </li>
+
+          <li>
+            <a class="nav-link link" href="">How it’s made?</a>
+          </li>
+
+          <li>
+            <a class="nav-link link" href="">Our products</a>
+          </li>
+
+          <li>
+            <a class="nav-link link" href="">Top sellers</a>
+          </li>
+
+          <li>
+            <a class="nav-link link" href="">Chocolate is loved</a>
+          </li>
+
+        </ul>
+
+        <ul class="header-social list">
+
+          <li>
+
+            <a class="header-social-link" href="">
+              <svg width="24" height="24">
+                <use href="../images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+
+          </li>
+          <li>
+
+            <a class="header-social-link" href="">
+              <svg width="24" height="24">
+                <use href="../images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+
+          </li>
+
+        </ul>
+
+      </div>
 
     </nav>
+
 
   </div>
 
@@ -799,54 +846,91 @@
 
     <footer class="section-footer">
 
-  <p class="footer-paragraph">
-    <span class="footer-paragraph-orange">Chocolate</span>
-    a delicious cure for a bad day
-  </p>
-
-  <h4 class="footer-title">Contact us</h4>
-
-  <address>
-
-    <ul class="list">
-
-      <li><a class="address-link link" href="tel:+380684439426">+380 (68) 443-94-26</a></li>
-
-      <li><a class=" address-link link" href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a></li>
-
-    </ul>
-
-  </address>
-
-  <nav>
-
-    <ul class="list">
-
-      <li>
-        <a class="nav-link-footer link" href="">Home</a>
-      </li>
-
-      <li>
-        <a class="nav-link-footer link" href="">How it’s made?</a>
-      </li>
-
-      <li>
-        <a class="nav-link-footer link" href="">Our products</a>
-      </li>
-
-      <li>
-        <a class="nav-link-footer link" href="">Top sellers</a>
-      </li>
-
-      <li>
-        <a class="nav-link-footer link" href="">Chocolate is loved</a>
-      </li>
-
-    </ul>
-
-  </nav>
+  <div class="container">
 
 
+    <div class="footer-social-address-tablet">
+
+      <p class="footer-paragraph">
+        <span class="footer-paragraph-orange">Chocolate</span>
+        a delicious cure for a bad day
+      </p>
+
+
+      <div class="footer-social-address-container">
+        <div class="footer-social-container">
+          <h4 class="footer-title">Contact us</h4>
+
+          <ul class="footer-social list">
+
+            <li>
+
+              <a class="footer-social-link" href="">
+                <svg class="footer-social-item">
+                  <use href="../images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+
+            </li>
+            <li>
+
+              <a class="footer-social-link" href="">
+                <svg class="footer-social-item">
+                  <use href="../images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+
+            </li>
+
+          </ul>
+
+        </div>
+
+        <address class="address">
+
+          <ul class="list">
+
+            <li class="address-item"><a class="address-link link" href="tel:+380684439426">+380 (68) 443-94-26</a></li>
+
+            <li class="address-item"><a class=" address-link link"
+                href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a></li>
+
+          </ul>
+
+        </address>
+      </div>
+    </div>
+
+    <nav class="footer-nav">
+
+      <ul class="footer-nav-list list">
+
+        <li class="footer-nav-item">
+          <a class="footer-nav-link link" href="">Home</a>
+        </li>
+
+        <li class="footer-nav-item">
+          <a class="footer-nav-link link" href="">How it’s made?</a>
+        </li>
+
+        <li class="footer-nav-item">
+          <a class="footer-nav-link link" href="">Our products</a>
+        </li>
+
+        <li class="footer-nav-item">
+          <a class="footer-nav-link link" href="">Top sellers</a>
+        </li>
+
+        <li class="footer-nav-item">
+          <a class="footer-nav-link link" href="">Chocolate is loved</a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+
+  </div>
 </footer>
 
     
