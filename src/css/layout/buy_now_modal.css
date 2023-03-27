@@ -17,6 +17,10 @@
   overflow: hidden;
 }
 
+.second-title {
+  font-weight: 600;
+}
+
 .product-list {
   list-style: none;
   display: flex;
@@ -85,6 +89,7 @@
   border-radius: 8px;
   font-weight: 400;
   font-size: 14px;
+  line-height: 1.21;
 }
 
 .surname {
@@ -118,7 +123,7 @@
 .number {
   font-weight: 500;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 1.21;
   letter-spacing: -0.02em;
 }
 
@@ -206,7 +211,11 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.28;
-    margin-bottom: ;
+  }
+
+  .number {
+    font-style: 18px;
+    line-height: 1.22;
   }
 
   .phone-icon {
