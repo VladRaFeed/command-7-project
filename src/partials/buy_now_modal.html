@@ -3,8 +3,12 @@
   <div class="product-card">
     <ul class="product-list">
       <li class="product-item">
-        <div class="prouct-container">
+        <div class="product-container">
           <img
+            srcset="
+              ../images/buy_now/buy100.jpg,
+              ../images/buy_now/buy100@2x.jpg 2x
+            "
             src="../images/buy_now/buy100.jpg"
             alt="100g"
             class="product-img"
@@ -13,8 +17,12 @@
         </div>
       </li>
       <li class="product-item">
-        <div class="prouct-container">
+        <div class="product-container">
           <img
+            srcset="
+              ../images/buy_now/buy200.jpg,
+              ../images/buy_now/buy200@2x.jpg 2x
+            "
             src="../images/buy_now/buy200.jpg"
             alt="100g"
             class="product-img"
@@ -23,8 +31,12 @@
         </div>
       </li>
       <li class="product-item">
-        <div class="prouct-container">
+        <div class="product-container">
           <img
+            srcset="
+              ../images/buy_now/buy300.jpg,
+              ../images/buy_now/buy300@2x.jpg 2x
+            "
             src="../images/buy_now/buy300.jpg"
             alt="100g"
             class="product-img"
@@ -36,24 +48,25 @@
   </div>
   <form action="" class="buynow-form">
     <div class="form-container">
-      <div class="pers-inf">
-        <p class="form-label">Personal information</p>
-        <input
-          type="text"
-          name="cust_name"
-          placeholder="Name"
-          required
-          class="buynow-input"
-        />
-        <input
-          type="text"
-          name="cust_surname"
-          placeholder="Surname"
-          required
-          class="buynow-input surname"
-        />
+      <div>
+        <p class="form-label pers-label">Personal information</p>
+        <div class="pers-inf">
+          <input
+            type="text"
+            name="cust_name"
+            placeholder="Name"
+            required
+            class="buynow-input name"
+          />
+          <input
+            type="text"
+            name="cust_surname"
+            placeholder="Surname"
+            required
+            class="buynow-input surname"
+          />
+        </div>
       </div>
-
       <label class="form-label">
         Email
         <input
@@ -89,7 +102,7 @@
           class="buynow-input"
         />
         <div class="card-icon">
-          <svg width="22" height="13">
+          <svg class="master">
             <use href="../images/icons.svg#icon-Mastercard"></use>
           </svg>
         </div>
