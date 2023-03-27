@@ -207,6 +207,10 @@
     margin-top: 40px;
   }
 
+  .cust-phone {
+    padding-left: 110px;
+  }
+
   .form-label {
     font-weight: 500;
     font-size: 14px;
@@ -218,8 +222,12 @@
     line-height: 1.22;
   }
 
+  .phone-icon::after {
+    height: 20px;
+  }
+
   .phone-icon {
-    top: 40px;
+    top: 37px;
   }
 
   .card-icon {
