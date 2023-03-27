@@ -1,3 +1,34 @@
+.backdrop-subskribe-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-bcg-color);
+}
+
+.subskribe-modal-section {
+  width: 311px;
+  height: 350px;
+  border-radius: 15px;
+  background-color: var(--main-bcg-color);
+  position: relative;
+}
+
+.subskribe-modal-section-button-close {
+  position: absolute;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.subskribe-modal-section-icon {
+  width: 24px;
+  height: 24px;
+  color: var();
+
 .subscribe-section {
   background-image: url(../../images/subscribe/subcribe-mobile.jpg);
   background-repeat: no-repeat;
@@ -127,5 +158,4 @@
 .subscribe-section-button:hover,
 .subscribe-section-button:focus {
   color: var(--brand-color);
-  background-color: var(--acent-color);
 }

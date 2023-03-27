@@ -1,1 +1,33 @@
-<div></div>
+<div class="backdrop-subskribe-modal">
+  <div class="subskribe-modal-section">
+    <button class="subskribe-modal-section-button-close">
+      <svg class="subskribe-modal-section-icon">
+        <use></use>
+      </svg>
+    </button>
+    <picture>
+      <source
+        srcset="../images/pop_up/full.jpg 1x, ../images/pop_up/full@2x.jpg 2x"
+        media="(min-width: 768px)"
+      />
+      <img
+        class="subskribe-modal-section-img"
+        src="../images/pop_up/full-mobile.jpg"
+        srcset="
+          ../images/pop_up/full-mobile.jpg    1x,
+          ../images/pop_up/full-mobile@2x.jpg 2x
+        "
+        alt="video-cover"
+      />
+    </picture>
+    <div class="subskribe-modal-section-container">
+      <h2 class="subskribe-modal-section-title">
+        Explore our
+        <span class="subskribe-modal-section-title-item">new chocolate</span>
+        first!
+      </h2>
+      <input type="text" class="subskribe-modal-section-input" />
+      <button type="button" class="subskribe-modal-section-button"></button>
+    </div>
+  </div>
+</div>
