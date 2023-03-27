@@ -145,6 +145,12 @@
   width: 220px;
 
   background-color: var(--secondary-bcg-color);
+
+  transform: translate(100%);
+}
+
+.mobile-menu.is-open {
+  transform: translate(0);
 }
 
 @media (min-width: 768px) {
