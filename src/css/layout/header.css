@@ -104,6 +104,13 @@
   padding-bottom: 36px;
 
   display: block;
+
+  transition: color var(--main-animation);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--brand-color);
 }
 
 .header-social {
