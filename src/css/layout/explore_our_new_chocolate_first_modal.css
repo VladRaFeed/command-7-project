@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--main-bcg-color);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .subskribe-modal-section {
@@ -16,147 +16,142 @@
   border-radius: 15px;
   background-color: var(--main-bcg-color);
   position: relative;
+  transition: opacity var(--main-animation), visibility var(--main-animation);
+}
+
+@media screen and (min-width: 768px){
+  .subskribe-modal-section{
+    width: 538px;
+    height: 412px;
+  }
 }
 
 .subskribe-modal-section-button-close {
   position: absolute;
   border-color: transparent;
   background-color: transparent;
+  top: 21px;
+  right: 20px;
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px){
+  .subskribe-modal-section-button-close{
+    top: 31px;
+    right: 31px;
+    padding: 12px;
+  }
 }
 
 .subskribe-modal-section-icon {
-  width: 24px;
-  height: 24px;
-  color: var();
+  width: 12px;
+  height: 12px;
+  stroke: var(--main-white-color);
 }
 
-.subscribe-section {
-  background-image: url(../images/subscribe/subcribe-mobile.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin: 0 auto;
-}
-
-@media screen and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .subscribe-section {
-    background-image: url(../images/subscribe/subcribe-mobile@2x.jpg);
+@media screen and (min-width: 768px){
+  .subskribe-modal-section-icon{
+    width: 14px;
+    height: 14px;
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 1),
-  screen and (min-width: 768px) and (min-resolution: 96dpi),
-  screen and (min-width: 768px) and (min-resolution: 1dppx) {
-  .subscribe-section {
-    background-image: url(../images/subscribe/subcribe-tablet.jpg);
+.subskribe-modal-section-img {
+  width: 311px;
+  height: 169px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+@media screen and (min-width: 768px){
+  .subskribe-modal-section-img{
+    width: 538px;
+    height: 196px;
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 768px) and (min-resolution: 192dpi),
-  screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .subscribe-section {
-    background-image: url(../images/subscribe/subcribe-tablet@2x.jpg);
+.subskribe-modal-section-container {
+  padding: 32px 24px;
+}
+
+@media screen and (min-width: 768px){
+  .subskribe-modal-section-container{
+    padding: 40px 40px;
   }
 }
 
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 1),
-  screen and (min-width: 1200px) and (min-resolution: 96dpi),
-  screen and (min-width: 1200px) and (min-resolution: 1dppx) {
-  .subscribe-section {
-    background-image: url(../images/subscribe/subcribe.jpg);
-  }
-}
-
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1200px) and (min-resolution: 192dpi),
-  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .subscribe-section {
-    background-image: url(../images/subscribe/subcribe@2x.jpg);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .subscribe-section {
-    width: 1200px;
-  }
-}
-
-.subscribe-section-container {
-  padding-top: 62px;
-  padding-bottom: 63px;
-}
-
-@media screen and (min-width: 768px) {
-  .subscribe-section-container {
-    padding-top: 72px;
-    padding-bottom: 72px;
-  }
-}
-
-.subscribe-section-title {
+.subskribe-modal-section-title {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.03em;
-  color: var(--main-white-color);
-  text-align: center;
+  margin-bottom: 24px;
 }
 
-@media screen and (min-width: 768px) {
-  .subscribe-section-title {
+@media screen and (min-width: 768px){
+  .subskribe-modal-section-title{
     font-size: 24px;
-    line-height: 1.1666;
+    line-height: 1.17;
+    margin-bottom: 28px;
+    text-transform: uppercase;
   }
 }
 
-.subscribe-section-text {
-  font-size: 14px;
-  line-height: 1.285;
-  color: var(--main-white-color);
-  text-align: center;
-
-  margin-top: 24px;
+.subskribe-modal-section-title-item {
+  color: var(--brand-color);
 }
 
-@media screen and (min-width: 768px) {
-  .subscribe-section-text {
-    width: 467px;
-    margin-left: auto;
-    margin-right: auto;
+.subskribe-modal-section-input {
+  border-radius: 100px;
+  color: var(--border-color);
+  width: 263px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  padding-left: 18px;
+  border: none;
+}
+@media screen and (min-width: 768px){
+  .input-wrapper{
+display: flex;
+gap: 8px;
+align-items: center;
   }
 }
 
-.subscribe-section-button {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.214;
-  color: var(--main-white-color);
+@media screen and (min-width: 768px){
+  .subskribe-modal-section-input{
+    width: 313px;
+    height: 52px;
+    padding-left: 24px;
+    display: block;
+  }
+}
+
+.subskribe-modal-section-button{
   border-radius: 100px;
   background-color: var(--brand-color);
+  width: 100px;
+  height: 45px;
+  color: var(--main-white-color);
   border: none;
-  cursor: pointer;
-
-  padding: 12px 28px;
-  margin: 24px auto 0;
-  display: block;
-  margin-top: 24px;
-
-  transition: color var(--timing-function),
-    background-color var(--timing-function);
+  position: absolute;
+  right: 24px;
+  bottom: 32px;
+  transition: color var(--main-animation);
+  transition: background-color var(--main-animation);
 }
 
-@media screen and (min-width: 768px) {
-  .subscribe-section-button {
-    font-size: 18px;
-    line-height: 1.222;
-    padding: 14px 40px;
+@media screen and (min-width: 768px){
+  .subskribe-modal-section-button{
+    right: 40px;
+    bottom: 40px;
+    position: static;
   }
 }
 
-.subscribe-section-button:hover,
-.subscribe-section-button:focus {
+.subskribe-modal-section-button:hover,
+.subskribe-modal-section-button:focus {
   color: var(--brand-color);
+  background-color: var(--acent-color);
 }

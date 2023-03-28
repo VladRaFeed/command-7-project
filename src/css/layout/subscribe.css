@@ -112,8 +112,8 @@
   display: block;
   margin-top: 24px;
 
-  transition: color var(--timing-function);
-  transition: background-color var(--timing-function);
+  transition: color var(--main-animation);
+  transition: background-color var(--main-animation);
 }
 
 @media screen and (min-width: 768px) {
