@@ -1,12 +1,24 @@
 .thank-u-modal {
-  /* background: url("../images/half-bar.webp"); */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: var(--brand-color);
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 15px;
-  margin: 0 auto;
-  position: relative;
+  z-index: 60;
   overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--main-animation), visibility var(--main-animation);
+}
+
+.thank-u-modal.active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
 }
 
 .close-btn {
@@ -37,9 +49,9 @@
 
 .thank-u-img {
   position: absolute;
-    bottom: -27%;
-    left: -3%;
-    transform: rotate(-10deg);
+  bottom: -27%;
+  left: -3%;
+  transform: rotate(-10deg);
 }
 
 @media (min-width: 375px) {
@@ -57,16 +69,16 @@
 }
 
 .title-modal-tnk {
-    font-weight: 600;
-    color: var(--main-white-color);
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    font-size: 24px;
-    line-height: 1.17;
+  font-weight: 600;
+  color: var(--main-white-color);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 1.17;
 }
 
 @media (max-width: 767px) {
-  .title-modal-tnk { 
+  .title-modal-tnk {
     font-size: 20px;
     line-height: 1.2;
   }
@@ -80,7 +92,6 @@
   max-width: 219px;
   margin-top: 8px;
 }
-
 
 @media (min-width: 768px) {
   .text-modal-tnk {
@@ -104,8 +115,8 @@
   }
 }
 @media (min-width: 767px) {
-.thank-u-img {
-  bottom: -4%;
-  left: -4%;
-}
+  .thank-u-img {
+    bottom: -4%;
+    left: -4%;
+  }
 }
