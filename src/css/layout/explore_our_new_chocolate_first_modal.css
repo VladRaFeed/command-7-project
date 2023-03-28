@@ -1,26 +1,28 @@
-.backdrop-subskribe-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
 .subskribe-modal-section {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 311px;
   height: 350px;
   border-radius: 15px;
   background-color: var(--main-bcg-color);
-  position: relative;
   transition: opacity var(--main-animation), visibility var(--main-animation);
+
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 50;
 }
 
-@media screen and (min-width: 768px){
-  .subskribe-modal-section{
+.subskribe-modal-section.active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+}
+
+@media screen and (min-width: 768px) {
+  .subskribe-modal-section {
     width: 538px;
     height: 412px;
   }
@@ -35,8 +37,8 @@
   padding: 10px;
 }
 
-@media screen and (min-width: 768px){
-  .subskribe-modal-section-button-close{
+@media screen and (min-width: 768px) {
+  .subskribe-modal-section-button-close {
     top: 31px;
     right: 31px;
     padding: 12px;
@@ -49,8 +51,8 @@
   stroke: var(--main-white-color);
 }
 
-@media screen and (min-width: 768px){
-  .subskribe-modal-section-icon{
+@media screen and (min-width: 768px) {
+  .subskribe-modal-section-icon {
     width: 14px;
     height: 14px;
   }
@@ -63,8 +65,8 @@
   border-top-right-radius: 15px;
 }
 
-@media screen and (min-width: 768px){
-  .subskribe-modal-section-img{
+@media screen and (min-width: 768px) {
+  .subskribe-modal-section-img {
     width: 538px;
     height: 196px;
   }
@@ -74,8 +76,8 @@
   padding: 32px 24px;
 }
 
-@media screen and (min-width: 768px){
-  .subskribe-modal-section-container{
+@media screen and (min-width: 768px) {
+  .subskribe-modal-section-container {
     padding: 40px 40px;
   }
 }
@@ -88,8 +90,8 @@
   margin-bottom: 24px;
 }
 
-@media screen and (min-width: 768px){
-  .subskribe-modal-section-title{
+@media screen and (min-width: 768px) {
+  .subskribe-modal-section-title {
     font-size: 24px;
     line-height: 1.17;
     margin-bottom: 28px;
@@ -111,16 +113,16 @@
   padding-left: 18px;
   border: none;
 }
-@media screen and (min-width: 768px){
-  .input-wrapper{
-display: flex;
-gap: 8px;
-align-items: center;
+@media screen and (min-width: 768px) {
+  .input-wrapper {
+    display: flex;
+    gap: 8px;
+    align-items: center;
   }
 }
 
-@media screen and (min-width: 768px){
-  .subskribe-modal-section-input{
+@media screen and (min-width: 768px) {
+  .subskribe-modal-section-input {
     width: 313px;
     height: 52px;
     padding-left: 24px;
@@ -128,7 +130,7 @@ align-items: center;
   }
 }
 
-.subskribe-modal-section-button{
+.subskribe-modal-section-button {
   border-radius: 100px;
   background-color: var(--brand-color);
   width: 100px;
@@ -142,8 +144,8 @@ align-items: center;
   transition: background-color var(--main-animation);
 }
 
-@media screen and (min-width: 768px){
-  .subskribe-modal-section-button{
+@media screen and (min-width: 768px) {
+  .subskribe-modal-section-button {
     right: 40px;
     bottom: 40px;
     position: static;
