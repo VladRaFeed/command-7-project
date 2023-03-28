@@ -1,4 +1,3 @@
-/* Modal leave a review
 .title.review {
   margin: 0;
   text-align: left;
@@ -29,18 +28,6 @@
   }
 }
 
-.backdrop-review {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(46, 47, 66, 0.4);
-  opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  overflow-y: scroll;
-}
-
 .modal-review {
   min-width: 312px;
   height: 470px;
@@ -49,14 +36,27 @@
   padding-right: 24px;
   padding-bottom: 32px;
   padding-left: 24px;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: var(--main-bsg-color);
+  background-color: var(--main-bcg-color);
   border-radius: 15px;
+  z-index: 50;
 
   overflow-y: hidden;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-review.active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
 }
 
 @media (min-width: 768px) {
@@ -215,4 +215,4 @@
 
 .main-button.review {
   margin-top: 18px;
-} */
+}
