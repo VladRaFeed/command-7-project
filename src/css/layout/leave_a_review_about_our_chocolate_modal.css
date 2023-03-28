@@ -1,4 +1,4 @@
-/* Modal leave a review */
+/* Modal leave a review
 .title.review {
   margin: 0;
   text-align: left;
@@ -56,7 +56,7 @@
   background-color: var(--main-bsg-color);
   border-radius: 15px;
 
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 @media (min-width: 768px) {
@@ -215,4 +215,4 @@
 
 .main-button.review {
   margin-top: 18px;
-}
+} */
