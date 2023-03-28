@@ -1,3 +1,102 @@
-.thank {
-  color: crimson;
+.feedback-container {
+  position: relative;
+  max-width: 311px;
+  max-height: 350px;
+  padding-top: 84px;
+  padding-right: 24px;
+  padding-bottom: 178px;
+  padding-left: 58px;
+  border-radius: 15px;
+  background-color: var(--brand-color);
+  margin: 0 auto;
+  background-image: url(../../images/pop_up/pop-up-296.png);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
+
+@media screen and (min-width: 768px) {
+  .feedback-container {
+    max-width: 516px;
+    max-height: 414px;
+    padding-top: 163px;
+    padding-right: 49px;
+    padding-bottom: 163px;
+    padding-left: 170px;
+    background-image: url(../../images/pop_up/pop-up-384.png);
+  }
+}
+
+.feedback-button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  top: 14px;
+  right: 14px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--acent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .feedback-button {
+    top: 24px;
+    right: 26px;
+    width: 38px;
+    height: 38px;
+  }
+}
+
+.feedback-button-close {
+  display: flex;
+  fill: var(--brand-color);
+}
+
+@media screen and (min-width: 768px) {
+  .feedback-button-close {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.feedback-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--acent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .feedback-title {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
+.feedback-text {
+  max-width: 180px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  margin-top: 8px;
+  color: var(--main-white-color);
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .feedback-text {
+    max-width: 297px;
+    font-size: 18px;
+    line-height: 1.33;
+  }
 }
