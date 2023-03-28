@@ -1,34 +1,99 @@
+/* CONTAINERS */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  background-color: rgba(46, 47, 66, 0.4);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
+
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+}
+
 .container-buynow {
+  position: relative;
   width: 311px;
-  height: 1007px;
   margin-left: auto;
   margin-right: auto;
   padding: 32px 24px;
   background-color: var(--main-bcg-color);
   border-radius: 15px;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
-@media screen and (min-width: 768px) {
-  .container-buynow {
-    width: 609px;
-    height: 1058px;
-  }
+
+.container-buynow.active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-close-icon {
+  width: 12px;
+  height: 12px;
+  stroke: var(--main-text-color);
 }
 
 .product-card {
-  width: 231px;
-  height: 257px;
+  width: 233px;
   margin-top: 32px;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
+}
 
+.second-title {
+  font-weight: 600;
+}
+
+.product-list {
+  list-style: none;
+  display: flex;
+}
+
+.product-item {
   background-color: var(--main-white-color);
   border: 1px solid var(--border-color);
   border-radius: 15px;
+  padding-top: 32px;
+  padding-bottom: 28px;
 }
-.product-img {
+
+.product-container {
+  width: 231px;
+}
+
+/* LIST CONTENT */
+
+.product-buy-img {
   width: 167px;
-  height: 148px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
+
 .prod-weight {
   display: block;
   width: 96px;
@@ -44,19 +109,24 @@
   font-size: 14px;
   line-height: 33px;
 }
-.pers-inf {
-}
-.form-label {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-}
-.form-container {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
+
+.buynow-form {
   margin-top: 32px;
 }
+
+.form-label {
+  display: block;
+  margin-top: 18px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: -0.02em;
+}
+
+.pers-label {
+  margin-top: 0;
+}
+
 .buynow-input {
   width: 100%;
   height: 45px;
@@ -66,12 +136,164 @@
   border-radius: 8px;
   font-weight: 400;
   font-size: 14px;
+  line-height: 1.21;
 }
+
 .surname {
   margin-top: 14px;
+}
+
+.phone-label {
+  position: relative;
+}
+.cust-phone {
+  padding-left: 100px;
+}
+
+.phone-icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  top: 35px;
+  left: 18px;
+}
+
+.phone-icon::after {
+  content: '';
+  height: 18px;
+  width: 2px;
+
+  background-color: var(--border-color);
+}
+
+.number {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
 }
 
 .comment {
   resize: none;
   height: 91px;
+}
+
+.card-label {
+  position: relative;
+}
+
+.card-icon {
+  position: absolute;
+  display: block;
+  left: 225px;
+  bottom: 15px;
+}
+
+.master {
+  width: 22px;
+  height: 13px;
+}
+
+.main-button {
+  margin-right: auto;
+}
+
+.buynow-btn {
+  margin-top: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  /* PRODUCT CARD */
+  .container-buynow {
+    width: 609px;
+  }
+
+  .modal-close-btn {
+    top: 31px;
+    right: 31px;
+  }
+
+  .modal-close-icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .product-list {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .product-card {
+    overflow: visible;
+    width: 513px;
+  }
+
+  .product-item {
+    padding-top: 24px;
+    padding-bottom: 18px;
+  }
+
+  .product-container {
+    width: 160px;
+  }
+
+  .product-buy-img {
+    width: 120px;
+  }
+
+  /* FORM */
+
+  .pers-inf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 8px;
+  }
+
+  .name {
+    margin-top: 0;
+  }
+
+  .surname {
+    margin-top: 0;
+  }
+
+  .buynow-form {
+    margin-top: 40px;
+  }
+
+  .cust-phone {
+    padding-left: 110px;
+  }
+
+  .form-label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28;
+  }
+
+  .number {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .phone-icon::after {
+    height: 20px;
+  }
+
+  .phone-icon {
+    top: 37px;
+  }
+
+  .card-icon {
+    left: 520px;
+    bottom: 11px;
+  }
+
+  .master {
+    width: 27px;
+    height: 18px;
+  }
 }
