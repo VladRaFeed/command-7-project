@@ -1,128 +1,126 @@
-<div class="js-backdrop-modal backdrop">
-  <div class="container-buynow modal" data-modal="1">
-    <button type="button" class="js-modal-close modal-close-btn">
-      <svg class="modal-close-icon">
-        <use href="./images/icons.svg#icon-cross-button"></use>
-      </svg>
-    </button>
-    <h2 class="second-title"><span class="orange-title">buy</span> now</h2>
-    <div class="product-card">
-      <ul class="product-list">
-        <li class="product-item">
-          <div class="product-container">
-            <img
-              srcset="
-                ./images/buy_now/buy100.jpg,
-                ./images/buy_now/buy100@2x.jpg 2x
-              "
-              src="./images/buy_now/buy100.jpg"
-              alt="100g"
-              class="product-buy-img"
-            />
-            <span class="prod-weight">100g</span>
-          </div>
-        </li>
-        <li class="product-item">
-          <div class="product-container">
-            <img
-              srcset="
-                ./images/buy_now/buy200.jpg,
-                ./images/buy_now/buy200@2x.jpg 2x
-              "
-              src="./images/buy_now/buy200.jpg"
-              alt="100g"
-              class="product-buy-img"
-            />
-            <span class="prod-weight">200g</span>
-          </div>
-        </li>
-        <li class="product-item">
-          <div class="product-container">
-            <img
-              srcset="
-                ./images/buy_now/buy300.jpg,
-                ./images/buy_now/buy300@2x.jpg 2x
-              "
-              src="./images/buy_now/buy300.jpg"
-              alt="100g"
-              class="product-buy-img"
-            />
-            <span class="prod-weight">300g</span>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <form action="" class="buynow-form">
-      <div class="form-container">
-        <div>
-          <p class="form-label pers-label">Personal information</p>
-          <div class="pers-inf">
-            <input
-              type="text"
-              name="cust_name"
-              placeholder="Name"
-              required
-              class="buynow-input name"
-            />
-            <input
-              type="text"
-              name="cust_surname"
-              placeholder="Surname"
-              required
-              class="buynow-input surname"
-            />
-          </div>
+<div class="container-buynow modal" data-modal="1">
+  <button type="button" class="js-modal-close modal-close-btn">
+    <svg class="modal-close-icon">
+      <use href="./images/icons.svg#icon-cross-button"></use>
+    </svg>
+  </button>
+  <h2 class="second-title"><span class="orange-title">buy</span> now</h2>
+  <div class="product-card">
+    <ul class="product-list">
+      <li class="product-item">
+        <div class="product-container">
+          <img
+            srcset="
+              ./images/buy_now/buy100.jpg,
+              ./images/buy_now/buy100@2x.jpg 2x
+            "
+            src="./images/buy_now/buy100.jpg"
+            alt="100g"
+            class="product-buy-img"
+          />
+          <span class="prod-weight">100g</span>
         </div>
-        <label class="form-label">
-          Email
-          <input
-            type="email"
-            name="cust_email"
-            placeholder="Enter your email"
-            required
-            class="buynow-input"
+      </li>
+      <li class="product-item">
+        <div class="product-container">
+          <img
+            srcset="
+              ./images/buy_now/buy200.jpg,
+              ./images/buy_now/buy200@2x.jpg 2x
+            "
+            src="./images/buy_now/buy200.jpg"
+            alt="100g"
+            class="product-buy-img"
           />
-        </label>
-        <label class="form-label phone-label">
-          Phone number
-          <input
-            type="tel"
-            name="cust_phone"
-            placeholder="Phone number"
-            required
-            class="buynow-input cust-phone"
+          <span class="prod-weight">200g</span>
+        </div>
+      </li>
+      <li class="product-item">
+        <div class="product-container">
+          <img
+            srcset="
+              ./images/buy_now/buy300.jpg,
+              ./images/buy_now/buy300@2x.jpg 2x
+            "
+            src="./images/buy_now/buy300.jpg"
+            alt="100g"
+            class="product-buy-img"
           />
-          <div class="phone-icon">
-            <svg width="24" height="18">
-              <use href="./images/icons.svg#icon-flag"></use>
-            </svg>
-            <p class="number">+380</p>
-          </div>
-        </label>
-        <label class="form-label card-label">
-          Card number
+          <span class="prod-weight">300g</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <form action="" class="buynow-form">
+    <div class="form-container">
+      <div>
+        <p class="form-label pers-label">Personal information</p>
+        <div class="pers-inf">
           <input
             type="text"
-            name="cust_ccard"
-            placeholder="Enter card"
-            class="buynow-input"
+            name="cust_name"
+            placeholder="Name"
+            required
+            class="buynow-input name"
           />
-          <div class="card-icon">
-            <svg class="master">
-              <use href="./images/icons.svg#icon-Mastercard"></use>
-            </svg>
-          </div>
-        </label>
-        <label class="form-label">
-          Comment
-          <textarea
-            name="comment"
-            placeholder="Enter text"
-            class="buynow-input comment"
-          ></textarea>
-        </label>
-        <button type="submit" class="main-button buynow-btn">Submit</button>
+          <input
+            type="text"
+            name="cust_surname"
+            placeholder="Surname"
+            required
+            class="buynow-input surname"
+          />
+        </div>
       </div>
-    </form>
-  </div>
+      <label class="form-label">
+        Email
+        <input
+          type="email"
+          name="cust_email"
+          placeholder="Enter your email"
+          required
+          class="buynow-input"
+        />
+      </label>
+      <label class="form-label phone-label">
+        Phone number
+        <input
+          type="tel"
+          name="cust_phone"
+          placeholder="Phone number"
+          required
+          class="buynow-input cust-phone"
+        />
+        <div class="phone-icon">
+          <svg width="24" height="18">
+            <use href="./images/icons.svg#icon-flag"></use>
+          </svg>
+          <p class="number">+380</p>
+        </div>
+      </label>
+      <label class="form-label card-label">
+        Card number
+        <input
+          type="text"
+          name="cust_ccard"
+          placeholder="Enter card"
+          class="buynow-input"
+        />
+        <div class="card-icon">
+          <svg class="master">
+            <use href="./images/icons.svg#icon-Mastercard"></use>
+          </svg>
+        </div>
+      </label>
+      <label class="form-label">
+        Comment
+        <textarea
+          name="comment"
+          placeholder="Enter text"
+          class="buynow-input comment"
+        ></textarea>
+      </label>
+      <button type="submit" class="main-button buynow-btn">Submit</button>
+    </div>
+  </form>
 </div>
