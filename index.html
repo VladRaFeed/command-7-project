@@ -27,7 +27,7 @@
     <!-- styles -->
     
     <script type="module" crossorigin src="/command-7-project/assets/index-21669789.js"></script>
-    <link rel="stylesheet" href="/command-7-project/assets/index-dbfac608.css">
+    <link rel="stylesheet" href="/command-7-project/assets/index-9c8cf20e.css">
   </head>
   <body>
     <header>
@@ -779,7 +779,11 @@
     </div>
 
     <div class="reviews-button-space">
-      <button class="reviews-button main-button" type="button">
+      <button
+        class="reviews-button main-button js-open-modal"
+        type="button"
+        data-modal="2"
+      >
         Leave a review
       </button>
     </div>
@@ -958,64 +962,62 @@
       <div></div>
 
       <!--  Modal leave a review  -->
-<!-- <div class="js-backdrop-modal backdrop">
-  <div class="modal-review modal" data-modal="2">
-    <h2 class="title review">
-      LEAVE A REVIEW ABOUT <span class="title orange">OUR CHOCOLATE</span>
-    </h2>
-    <button class="button js-modal-close" data-modal="2">
-      <svg class="review-close">
-        <use href="./images/icons.svg#icon-close" width="24" height="24"></use>
-      </svg>
-    </button>
-    <form autocomplete="off" validate>
-      <div class="form-review">
+<div class="modal-review modal" data-modal="2">
+  <h2 class="title review">
+    LEAVE A REVIEW ABOUT <span class="title orange">OUR CHOCOLATE</span>
+  </h2>
+  <button class="button js-modal-close" data-modal="2">
+    <svg class="review-close">
+      <use href="/command-7-project/assets/icons-b57cbb6c.svg#icon-close" width="24" height="24"></use>
+    </svg>
+  </button>
+  <form autocomplete="off" validate>
+    <div class="form-review">
+      <input
+        class="review-input"
+        type="text"
+        name="name"
+        placeholder="Name"
+        required
+        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+        title="Username must be two words separated by space."
+      />
+      <input
+        class="review-input"
+        type="email"
+        name="email"
+        placeholder="Email"
+        required
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+      />
+      <div class="form-field">
+        <svg class="form-flag">
+          <use href="/command-7-project/assets/icons-b57cbb6c.svg#icon-flag"></use>
+        </svg>
+        <label class="review-label" for="tel">+380</label>
         <input
-          class="review-input"
-          type="text"
-          name="name"
-          placeholder="Name"
+          class="review-input phone"
+          type="tel"
+          name="tel"
+          id="tel"
+          placeholder="Phone number"
           required
-          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-          title="Username must be two words separated by space."
+          maxlength="9"
+          pattern="[0-9]{9}"
+          title="Phone must be nine digits after +380."
         />
-        <input
-          class="review-input"
-          type="email"
-          name="email"
-          placeholder="Email"
-          required
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-        />
-        <div class="form-field">
-          <svg class="form-flag">
-            <use href="./images/icons.svg#icon-flag"></use>
-          </svg>
-          <label class="review-label" for="tel">+380</label>
-          <input
-            class="review-input phone"
-            type="tel"
-            name="tel"
-            id="tel"
-            placeholder="Phone number"
-            required
-            maxlength="9"
-            pattern="[0-9]{9}"
-            title="Phone must be nine digits after +380."
-          />
-        </div>
-
-        <textarea
-          class="review-input textarea"
-          name="text"
-          id="text"
-          placeholder="Enter text"
-        ></textarea>
-        <button class="main-button review">Send</button>
       </div>
-    </form>
-  </div>
-</div> -->
+
+      <textarea
+        class="review-input textarea"
+        name="text"
+        id="text"
+        placeholder="Enter text"
+      ></textarea>
+      <button class="main-button review">Send</button>
+    </div>
+  </form>
+</div>
 
       <div></div>
 
@@ -1096,6 +1098,8 @@
     </nav>
   </div>
 </footer>
+
+    <div class="js-backdrop-modal backdrop"></div>
 
 
     
