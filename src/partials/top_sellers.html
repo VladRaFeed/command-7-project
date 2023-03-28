@@ -1,22 +1,106 @@
-<section class="ts-section">
+<section class="ts-section section-padding" id="top_sellers">
   <div class="container">
-    <h2 class="title-second"><span class="title-orange">top</span> sellers</h2>
+    <h2 class="second-title"><span class="orange-title">top</span> sellers</h2>
     <ul class="ts-list list">
       <li class="ts-item">
-        <img class="ts-img" src="" alt="top_seller1" />
+        <picture>
+          <source
+            srcset="
+              ./images/top_sellers/first-top-seller.jpg    1x,
+              ./images/top_sellers/first-top-seller@2x.jpg 2x
+            "
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="
+              ./images/top_sellers/first-top-seller-tablet.jpg    1x,
+              ./images/top_sellers/first-top-seller-tablet@2x.jpg 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/top_sellers/first-top-seller-mobile.jpg    1x,
+              ./images/top_sellers/first-top-seller-mobile@2x.jpg 2x
+            "
+            media="(min-width:320px)"
+          />
+          <img
+            class="ts-img"
+            src="./images/top_sellers/first-top-seller.jpg"
+            alt="top_seller1"
+          />
+        </picture>
+
+        <p class="ts-text">
+          Crazy enough chocolate originates from a bean just like the coffee
+          bean called Cacao. Cacao has been around for thousands of years and
+          was first discovered by the Native American tribe called the Mayans.
+        </p>
       </li>
+
       <li class="ts-item">
-        <img class="ts-img" src="" alt="top_seller2" />
+        <picture>
+          <source
+            srcset="
+              ./images/top_sellers/second-top.jpg    1x,
+              ./images/top_sellers/second-top@2x.jpg 2x
+            "
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="
+              ./images/top_sellers/second-top-tablet.jpg    1x,
+              ./images/top_sellers/second-top-tablet@2x.jpg 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/top_sellers/second-top-mobile.jpg    1x,
+              ./images/top_sellers/second-top-mobile@2x.jpg 2x
+            "
+            media="(min-width:320px)"
+          />
+          <img
+            class="ts-img"
+            src="./images/top_sellers/second-top.jpg"
+            alt="top_seller2"
+          />
+        </picture>
       </li>
       <li class="ts-item ts-item-desktop">
-        <img class="ts-img" src="" alt="top_seller3" />
+        <picture>
+          <source
+            srcset="
+              ./images/top_sellers/third-top.jpg    1x,
+              ./images/top_sellers/third-top@2x.jpg 2x
+            "
+            media="(min-width:1200px)"
+          />
+
+          <img
+            class="ts-img"
+            src="./images/top_sellers/third-top.jpg"
+            alt="top_seller3"
+          />
+        </picture>
       </li>
     </ul>
-    <p class="ts-text">
-      Crazy enough chocolate originates from a bean just like the coffee bean
-      called Cacao. Cacao has been around for thousands of years and was first
-      discovered by the Native American tribe called the Mayans.
-    </p>
-    <button type="button" class="btn">Buy now</button>
+    <div class="p-wrapper">
+      <p class="ts-text-desktop">
+        Crazy enough chocolate originates from a bean just like the coffee bean
+        called Cacao. Cacao has been around for thousands of years and was first
+        discovered by the Native American tribe called the Mayans.
+      </p>
+
+      <button
+        type="button"
+        class="js-open-modal main-button ts-btn"
+        data-modal="1"
+      >
+        Buy now
+      </button>
+    </div>
   </div>
 </section>

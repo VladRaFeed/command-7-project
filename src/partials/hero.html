@@ -1,4 +1,4 @@
-<section class="hero">
+<section class="hero" id="home">
   <div class="container hero-container">
     <h2 class="visually-hidden">hero</h2>
     <h3 class="hero-subtitle">
@@ -7,15 +7,23 @@
     </h3>
     <div class="hero-btn-container">
       <div class="hero-btn">
-        <button class="main-button buy-btn">Buy now</button>
-        <button class="main-button how-made-btn">How it&#39;s made</button>
+        <button class="js-open-modal main-button buy-btn" data-modal="1">
+          Buy now
+        </button>
+        <a class="main-button how-made-btn link" href="#how_its_made"
+          >How it&#39;s made</a
+        >
       </div>
       <div class="scroll-wrapper">
-        <a href="#" class="link scroll-btn">
+        <a href="#sub" class="link scroll-btn">
           scroll down
           <div class="arrow-container">
-            <svg class="svg-scroll-btn" width="16" height="16">
-              <use href="../images/icons.svg#icon-arrow-down"></use>
+            <svg
+              class="svg-scroll-btn animate__animated animate__infinite animate__slower up-button__icon"
+              width="16"
+              height="16"
+            >
+              <use href="./images/icons.svg#icon-arrow-down"></use>
             </svg>
           </div>
         </a>

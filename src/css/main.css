@@ -14,6 +14,9 @@
 /* components */
 @import url('./components/container.css');
 @import url('./components/buttons.css');
+@import url('./components/section-padding.css');
+@import url('./components/second-title.css');
+@import url('./components/orange-title.css');
 /* layouts */
 @import url('./layout/header.css');
 @import url('./layout/hero.css');

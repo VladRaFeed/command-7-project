@@ -1,9 +1,11 @@
 :root {
-  --main-bsg-color: #fafafa;
+  --main-bcg-color: #fafafa;
   --main-white-color: #ffffff;
   --main-text-color: #111111;
   --secondary-bcg-color: #1e1823;
   --brand-color: #fd9222;
   --acent-color: #fcf1e0;
   --border-color: rgba(17, 17, 17, 0.1);
+  --secondary-text-color: rgba(255, 255, 255, 0.1);
+  --main-animation: 250ms cubic-bezier(0.95, 0.03, 0.67, 1.07);
 }
