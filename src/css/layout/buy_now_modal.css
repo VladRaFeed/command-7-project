@@ -52,6 +52,12 @@
   font-weight: 600;
 }
 
+.buy_wrapper {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 461px;
+}
+
 .product-list {
   list-style: none;
   display: flex;
@@ -112,6 +118,18 @@
 }
 
 .buynow-input {
+  width: calc(100% - 21px);
+  height: 45px;
+  margin-top: 8px;
+  padding: 14px 18px;
+  border: 1.5px solid var(--border-color);
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+}
+
+.buynow-input-second {
   width: 100%;
   height: 45px;
   margin-top: 8px;
@@ -272,8 +290,8 @@
   }
 
   .card-icon {
-    left: 520px;
-    bottom: 11px;
+    left: 505px;
+    bottom: 10px;
   }
 
   .master {
