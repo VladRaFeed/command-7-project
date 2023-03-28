@@ -10,6 +10,16 @@
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow-y: scroll;
+
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
 }
 
 .container-buynow {
@@ -20,6 +30,15 @@
   padding: 32px 24px;
   background-color: var(--main-bcg-color);
   border-radius: 15px;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.container-buynow.active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
 }
 
 .modal-close-btn {
