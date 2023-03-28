@@ -1,22 +1,22 @@
-.about-project{
+.about-project {
   background-color: var(--main-bsg-color);
 }
 
-.about-project-section{
-  padding-top: 72px ;
+.about-project-section {
+  padding-top: 72px;
   padding-bottom: 72px;
 }
 
 @media screen and (min-width: 768px) {
   .about-project-section {
-    padding-top: 100px ;
+    padding-top: 100px;
     padding-bottom: 100px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .about-project-section {
-    padding-top: 128px ;
+    padding-top: 128px;
     padding-bottom: 128px;
   }
 }
@@ -43,15 +43,19 @@
 
 @media screen and (min-width: 1200px) {
   .about-project-container {
-   display: flex;
+    display: flex;
   }
 }
 
+.about-project-container-video {
+  position: relative;
+}
+
 .about-project-img {
-width: 335px;
-height: 500px;
-margin-top: 32px;
-border-radius: 15px;
+  width: 335px;
+  height: 500px;
+  margin-top: 32px;
+  border-radius: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -62,7 +66,7 @@ border-radius: 15px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px){
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .about-project-img {
     margin-left: auto;
     margin-right: auto;
@@ -76,6 +80,38 @@ border-radius: 15px;
   }
 }
 
+.about-project-video-link {
+  border: 2px solid var(--brand-color);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 233px;
+  left: 150px;
+  position: absolute;
+}
+
+@media screen and (min-width: 768px) {
+  .about-project-video-link {
+    top: 187px;
+    left: 343px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-project-video-link {
+    left: 278px;
+    top: 225px;
+  }
+}
+
+.about-project-icon {
+  stroke: var(--brand-color);
+  width: 15px;
+  height: 15px;
+}
 
 .container-about-project-subtitle {
   border-radius: 15px;
@@ -108,7 +144,7 @@ border-radius: 15px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px){
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container-about-project-subtitle {
     margin-left: auto;
     margin-right: auto;
@@ -122,9 +158,9 @@ border-radius: 15px;
   color: var(--main-text-color);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px){
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .about-project-subtitle {
- width: 338px;
+    width: 338px;
   }
 }
 
@@ -150,9 +186,9 @@ border-radius: 15px;
 .about-project-list-item {
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px){
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .about-project-list-item {
- width: 464px;
+    width: 464px;
   }
 }
 
