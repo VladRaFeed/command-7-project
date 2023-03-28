@@ -1,3 +1,122 @@
-.thankyou {
-  color: aquamarine;
+.thank-u-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--brand-color);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  z-index: 60;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--main-animation), visibility var(--main-animation);
+}
+
+.thank-u-modal.active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.close-btn {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  background-color: var(--acent-color);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 14px;
+  right: 14px;
+  transition: background-color 250ms cubic-bezier(0.95, 0.03, 0.67, 1.07);
+}
+
+.close-svg {
+  width: 16px;
+  height: 16px;
+  stroke: var(--brand-color);
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  background-color: var(--secondary-bcg-color);
+}
+
+.thank-u-img {
+  position: absolute;
+  bottom: -27%;
+  left: -3%;
+  transform: rotate(-10deg);
+}
+
+@media (min-width: 375px) {
+  .thank-u-modal {
+    width: 311px;
+    height: 350px;
+  }
+}
+
+@media (min-width: 767px) {
+  .thank-u-modal {
+    width: 516px;
+    height: 414px;
+  }
+}
+
+.title-modal-tnk {
+  font-weight: 600;
+  color: var(--main-white-color);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 1.17;
+}
+
+@media (max-width: 767px) {
+  .title-modal-tnk {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.text-modal-tnk {
+  color: var(--main-white-color);
+  letter-spacing: -0.02em;
+  font-size: 14px;
+  line-height: 1.14;
+  max-width: 219px;
+  margin-top: 8px;
+}
+
+@media (min-width: 768px) {
+  .text-modal-tnk {
+    font-size: 18px;
+    line-height: 1.3;
+    max-width: 309px;
+  }
+}
+
+@media (min-width: 375px) {
+  .text-box-tnk {
+    padding-top: 84px;
+    padding-left: 68px;
+  }
+}
+
+@media (min-width: 767px) {
+  .text-box-tnk {
+    padding-left: 163px;
+    padding-top: 154px;
+  }
+}
+@media (min-width: 767px) {
+  .thank-u-img {
+    bottom: -4%;
+    left: -4%;
+  }
 }
