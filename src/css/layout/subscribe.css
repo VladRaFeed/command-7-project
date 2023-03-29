@@ -1,5 +1,5 @@
 .subscribe-section {
-  background-image: url(./images/subscribe/subcribe-mobile.jpg);
+  background-image: url(././images/subscribe/Subcribe-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -10,7 +10,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .subscribe-section {
-    background-image: url(./images/subscribe/subcribe-mobile@2x.jpg);
+    background-image: url(././images/subscribe/subcribe-mobile@2x.jpg);
   }
 }
 
@@ -18,7 +18,7 @@
   screen and (min-width: 768px) and (min-resolution: 96dpi),
   screen and (min-width: 768px) and (min-resolution: 1dppx) {
   .subscribe-section {
-    background-image: url(./images/subscribe/subcribe-tablet.jpg);
+    background-image: url(././images/subscribe/subcribe-tablet.jpg);
   }
 }
 
@@ -26,7 +26,7 @@
   screen and (min-width: 768px) and (min-resolution: 192dpi),
   screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .subscribe-section {
-    background-image: url(./images/subscribe/subcribe-tablet@2x.jpg);
+    background-image: url(././images/subscribe/subcribe-tablet@2x.jpg);
   }
 }
 
@@ -34,7 +34,7 @@
   screen and (min-width: 1200px) and (min-resolution: 96dpi),
   screen and (min-width: 1200px) and (min-resolution: 1dppx) {
   .subscribe-section {
-    background-image: url(./images/subscribe/subcribe.jpg);
+    background-image: url(././images/subscribe/subcribe.jpg);
   }
 }
 
@@ -42,7 +42,7 @@
   screen and (min-width: 1200px) and (min-resolution: 192dpi),
   screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .subscribe-section {
-    background-image: url(./images/subscribe/subcribe@2x.jpg);
+    background-image: url(././images/subscribe/subcribe@2x.jpg);
   }
 }
 
