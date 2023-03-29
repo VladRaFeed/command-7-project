@@ -1,17 +1,3 @@
-.products-title {
-  text-align: center;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  color: var(--main-text-color);
-}
-
-.orange {
-  color: var(--brand-color);
-}
-
 .card-item {
   border: 1px solid var(--border-color);
   border-radius: 15px;
@@ -52,10 +38,6 @@
   .slider-list {
     margin-top: 32px;
   }
-
-  .test2:last-child {
-    display: none;
-  }
 }
 
 /* PODUCT SECTION */
@@ -64,19 +46,10 @@
   overflow: hidden;
 }
 
-/* SLIDER ELEMENT */
-/* @media (min-width: 375px) { */
-.slider-element {
-  width: 13px;
-  height: 13px;
-  background: rgba(17, 17, 17, 0.1);
-  border-radius: 50%;
-}
-/* } */
-
 /* PRICE */
 
 .card-price {
+  padding-top: 8px;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
@@ -84,84 +57,47 @@
 
 /* КАРТОЧКА ПРОДУКТА */
 
-@media (min-width: 375px) {
-  .card-item {
-    text-align: center;
-    width: 335px;
-  }
+.card-item {
+  text-align: center;
+  width: 335px;
+}
 
-  @media (min-width: 768px) {
-    .card-item {
-      width: 270px;
-    }
+@media (min-width: 768px) {
+  .card-item {
+    width: 270px;
   }
 }
 
 /* ЦЕНА ПРОДУКТА */
-
-@media (min-width: 375px) {
-  .price-box {
-    width: 94px;
-    height: 33px;
-    margin: 0 auto;
-    margin-top: 18px;
-    margin-bottom: 32px;
-  }
+.price-box {
+  width: 94px;
+  height: 33px;
+  margin: 0 auto;
+  margin-top: 18px;
+  margin-bottom: 32px;
 }
 
 /* КАРТИНКА ПРОДУКТА */
-@media (min-width: 375px) {
-  .product-img {
-    margin: 0 auto;
-    margin-top: 32px;
-  }
-}
-
-@media (min-width: 375px) {
-  .product-img {
-    margin-top: 50px;
-  }
+.product-img {
+  margin: 0 auto;
+  margin-top: 32px;
 }
 
 /* ЗАГОЛОВОК ПРОДУКТА */
-
-@media (min-width: 375px) {
-  .card-title {
-    margin-top: 8px;
-  }
+.card-title {
+  margin-top: 8px;
 }
-
 /* ТЕКСТ ПРОДУКТА */
 
-@media (min-width: 375px) {
-  .card-subtitle {
-    margin-top: 2px;
-  }
-}
-
-/* ЗАГОЛОВОК СЕКЦИИ ПРОДУКТА */
-
-@media (min-width: 375px) {
-  .products-title {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
-@media (min-width: 768px) {
-  .products-title {
-    font-size: 24px;
-    line-height: 1.17;
-  }
+.card-subtitle {
+  margin-top: 2px;
 }
 
 /* СПИСОК КАРТОЧЕК */
 
-@media (min-width: 375px) {
-  .cards-list {
-    /* margin-bottom: 20px; */
-    display: flex;
-  }
+.cards-list {
+  /* margin-bottom: 20px; */
+  display: flex;
 }
 
 @media (min-width: 768px) {
@@ -171,21 +107,14 @@
     /* margin-bottom: 32px; */
   }
 }
-
-@media (min-width: 1200px) {
-  .cards-list {
-    display: flex;
-    gap: 18px;
-    /* margin-bottom: 32px; */
-  }
+.swiper-wrapper {
+  margin-top: 32px;
 }
 
-@media (min-width: 375px) {
-  .card-wrapper {
-    width: 335px;
-    overflow: hidden;
-    margin-top: 32px;
-  }
+.card-wrapper {
+  width: 335px;
+  overflow: hidden;
+  margin-top: 32px;
 }
 
 @media (min-width: 768px) {
@@ -198,13 +127,5 @@
   .card-wrapper {
     width: 1136px;
     overflow: hidden;
-  }
-}
-
-/* PRICE */
-
-@media (min-width: 375px) {
-  .card-price {
-    padding-top: 8px;
   }
 }
