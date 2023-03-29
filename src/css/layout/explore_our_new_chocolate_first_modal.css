@@ -32,23 +32,26 @@
   position: absolute;
   border-color: transparent;
   background-color: transparent;
-  top: 21px;
-  right: 20px;
-  padding: 10px;
+  top: 15px;
+  right: 15px;
+  padding: 1px 4px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
   .subskribe-modal-section-button-close {
-    top: 31px;
-    right: 31px;
-    padding: 12px;
+    top: 24px;
+    right: 24px;
+    padding: 3px 5px;
   }
 }
+
 
 .subskribe-modal-section-icon {
   width: 12px;
   height: 12px;
   stroke: var(--main-white-color);
+  transition: stroke var(--main-animation);
 }
 
 @media screen and (min-width: 768px) {
@@ -56,6 +59,11 @@
     width: 14px;
     height: 14px;
   }
+}
+
+.subskribe-modal-section-icon:hover,
+.subskribe-modal-section-icon:focus {
+  stroke: var(--brand-color);
 }
 
 .subskribe-modal-section-img {
