@@ -78,6 +78,7 @@
   position: absolute;
   top: -42px;
   right: 37%;
+  border-radius: 50%;
 }
 
 .reviews-user-name {
