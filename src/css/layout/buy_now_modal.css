@@ -144,7 +144,7 @@
 }
 
 .buynow-input {
-  width: 100%;
+  width: calc(100% - 21px);
   height: 45px;
   margin-top: 8px;
   padding: 14px 18px;
