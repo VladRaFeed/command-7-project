@@ -1,0 +1,15 @@
+.swiper {
+  width: 231px;
+  height: 296px;
+}
+.image-slider .swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  background: rgba(17, 17, 17, 0.553);
+}
+.image-slider .swiper-pagination-bullet-active {
+  width: 28px;
+  height: 13px;
+  border-radius: 32px;
+  background: var(--brand-color);
+}
