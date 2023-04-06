@@ -4,8 +4,60 @@
       <use href="./images/icons.svg#icon-cross-button"></use>
     </svg>
   </button>
-  <h2 class="second-title"><span class="orange-title">buy</span> now</h2>
   <div class="buy-wrapper">
+    <h2 class="second-title"><span class="orange-title">buy</span> now</h2>
+
+    <!-- slider-buynow -->
+    <div class="swiper-modal swiper-product-card">
+      <div class="swiper-wrapper swiper-wrapper-modal">
+        <!-- Slides -->
+        <div class="swiper-slide product-item">
+          <div class="product-container">
+            <img
+              srcset="
+                ./images/buy_now/buy100.jpg,
+                ./images/buy_now/buy100@2x.jpg 2x
+              "
+              src="./images/buy_now/buy100.jpg"
+              alt="100g"
+              class="product-buy-img"
+            />
+            <span class="prod-weight">100g</span>
+          </div>
+        </div>
+        <div class="swiper-slide product-item">
+          <div class="product-container">
+            <img
+              srcset="
+                ./images/buy_now/buy200.jpg,
+                ./images/buy_now/buy200@2x.jpg 2x
+              "
+              src="./images/buy_now/buy200.jpg"
+              alt="100g"
+              class="product-buy-img"
+            />
+            <span class="prod-weight">200g</span>
+          </div>
+        </div>
+        <div class="swiper-slide product-item">
+          <div class="product-container">
+            <img
+              srcset="
+                ./images/buy_now/buy300.jpg,
+                ./images/buy_now/buy300@2x.jpg 2x
+              "
+              src="./images/buy_now/buy300.jpg"
+              alt="100g"
+              class="product-buy-img"
+            />
+            <span class="prod-weight">300g</span>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination image-slider"></div>
+    </div>
+    <!-- product-list tablet and desktop -->
+
     <div class="product-card">
       <ul class="product-list">
         <li class="product-item">
@@ -81,7 +133,7 @@
             name="cust_email"
             placeholder="Enter your email"
             required
-            class="buynow-input-second"
+            class="buynow-input"
           />
         </label>
         <label class="form-label phone-label">
@@ -91,7 +143,7 @@
             name="cust_phone"
             placeholder="Phone number"
             required
-            class="buynow-input-second cust-phone"
+            class="buynow-input cust-phone"
           />
           <div class="phone-icon">
             <svg width="24" height="18">
@@ -106,7 +158,7 @@
             type="text"
             name="cust_ccard"
             placeholder="Enter card"
-            class="buynow-input-second"
+            class="buynow-input"
           />
           <div class="card-icon">
             <svg class="master">
@@ -119,7 +171,7 @@
           <textarea
             name="comment"
             placeholder="Enter text"
-            class="buynow-input-second comment"
+            class="buynow-input comment"
           ></textarea>
         </label>
         <button
